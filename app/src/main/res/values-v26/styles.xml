@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:fontFamily">@font/font_prompt</item>
+        <item name="fontFamily">@font/font_prompt</item>
+        <item name="android:textViewStyle">@style/BaseAppTextViewStyle</item>
+        <item name="buttonStyle">@style/BaseAppTextViewStyle</item>
+        <item name="android:buttonStyle">@style/BaseAppButtonStyle</item>
+
+    </style>
+
+    <style name="AppSplashTextStyle" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/font_prompt_extrabold</item>
+        <item name="android:fontFamily">@font/font_prompt_extrabold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+</resources>
