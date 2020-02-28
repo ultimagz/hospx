@@ -9,6 +9,7 @@ plugins {
 
 android {
     compileSdkVersion(Apps.compileSdk)
+    buildToolsVersion(Apps.buildTools)
 
     defaultConfig {
         applicationId = "gz.tar.ultimagz.hospx"
@@ -43,7 +44,7 @@ android {
 
     buildTypes {
         getByName("release") {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
@@ -57,6 +58,9 @@ android {
 }
 
 dependencies {
+    project(":domain")
+    project(":data")
+
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
     implementation(Libs.kotlin)
