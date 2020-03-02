@@ -1,18 +1,27 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
 
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:fontFamily">@font/font_prompt</item>
         <item name="fontFamily">@font/font_prompt</item>
         <item name="android:textViewStyle">@style/BaseAppTextViewStyle</item>
-        <item name="buttonStyle">@style/BaseAppTextViewStyle</item>
+        <item name="buttonStyle">@style/BaseAppButtonStyle</item>
         <item name="android:buttonStyle">@style/BaseAppButtonStyle</item>
+    </style>
+
+    <style name="BaseActivityTheme" parent="AppTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <style name="BaseActivityTheme.NoActionBar" parent="AppTheme">
 
     </style>
 
@@ -22,10 +31,18 @@
         <item name="android:textColor">@color/colorTextPrimary</item>
     </style>
 
-    <style name="BaseAppButtonStyle" parent="android:Widget.Material.Button">
+    <style name="BaseAppButtonStyle" parent="android:Widget.Material.Button.Borderless">
         <item name="fontFamily">@font/font_prompt</item>
         <item name="android:fontFamily">@font/font_prompt</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/neu_bg</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:stateListAnimator">@animator/button_state_list_anim_material</item>
     </style>
 
     <style name="AppSplashTextStyle" parent="TextAppearance.MaterialComponents.Headline3">
