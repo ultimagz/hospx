@@ -53,6 +53,7 @@ object Versions {
     const val arrowKt = "0.10.4"
     const val timber = "4.7.1"
     const val materialComponents = "1.0.0"
+    const val threeTenAbp = "1.2.2"
 
         /* Test */
     const val junit = "4.12"
@@ -128,6 +129,7 @@ object Libs {
     /* Utils */
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val materialComponents = "com.google.android.material:material:${Versions.materialComponents}"
+    const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTenAbp}"
 }
 
 object GooglePlay {
