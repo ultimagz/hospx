@@ -23,6 +23,10 @@ android {
         resConfigs("en", "th")
     }
 
+    viewBinding {
+        isEnabled = true
+    }
+
     dataBinding {
         isEnabled = true
     }
