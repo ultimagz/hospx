@@ -9,6 +9,7 @@
         <item name="colorControlHighlight">@color/colorControlHighlight</item>
 
         <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentTransitions">true</item>
         <item name="android:fontFamily">@font/font_prompt</item>
         <item name="fontFamily">@font/font_prompt</item>
         <item name="android:textViewStyle">@style/BaseAppTextViewStyle</item>
