@@ -9,55 +9,14 @@
     tools:ignore="ContentDescription">
 
     <ImageView
-        android:id="@+id/ivAvatarW"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:rotation="-25"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28"
-        app:srcCompat="@drawable/avatar_w" />
-
-    <ImageView
-        android:id="@+id/ivAvatarM"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:rotation="25"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42"
-        app:srcCompat="@drawable/avatar_m" />
-
-    <TextView
-        android:id="@+id/tvAppName"
-        style="@style/AppSplashTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:layout_width="360dp"
+        android:layout_height="640dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54" />
-
-    <TextView
-        style="@style/AppSplashTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/splash_plus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintCircle="@id/ivAvatarM"
-        app:layout_constraintCircleAngle="205"
-        app:layout_constraintCircleRadius="42dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/ic_splash_screen" />
 
     <Button
         android:id="@+id/btnLogin"
