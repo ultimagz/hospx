@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">HospX</string>
+    <string name="app_name" translatable="false">HospX</string>
+    <string name="splash_plus" translatable="false">+</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>
