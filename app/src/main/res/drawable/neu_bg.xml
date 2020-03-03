@@ -1,82 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:bottom="8dp"
-        android:end="8dp">
-        <shape>
-            <gradient
-                android:angle="45"
-                android:gradientRadius="200%p"
-                android:endColor="#0020D6CB"
-                android:type="linear"
-                android:startColor="#2020D6CB" />
-            <corners android:radius="6dp" />
-        </shape>
-    </item>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:colorControlHighlight"
+    android:radius="6dp">
+    <item>
+        <layer-list>
+            <item
+                android:bottom="6dp"
+                android:right="6dp">
+                <shape>
+                    <gradient
+                        android:angle="-90"
+                        android:endColor="#00C1B6"
+                        android:startColor="#20D6CB"
+                        android:type="linear"
+                        android:useLevel="false" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
 
-    <item
-        android:bottom="6dp"
-        android:end="6dp">
-        <shape>
-            <gradient
-                android:angle="45"
-                android:gradientRadius="200%p"
-                android:endColor="#2020D6CB"
-                android:type="linear"
-                android:startColor="#4020D6CB" />
-            <corners android:radius="6dp" />
-        </shape>
-    </item>
+            <item
+                android:left="6dp"
+                android:top="6dp">
+                <shape>
+                    <gradient
+                        android:angle="90"
+                        android:centerColor="#40000000"
+                        android:endColor="#20000000"
+                        android:startColor="#60000000" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
 
-    <item
-        android:bottom="4dp"
-        android:end="4dp">
-        <shape>
-            <gradient
-                android:angle="45"
-                android:gradientRadius="200%p"
-                android:endColor="#4020D6CB"
-                android:type="linear"
-                android:startColor="#6020D6CB" />
-            <corners android:radius="6dp" />
-        </shape>
-    </item>
+            <item
+                android:bottom="4dp"
+                android:left="4dp"
+                android:right="4dp"
+                android:top="4dp">
+                <shape>
+                    <solid android:color="#00C1B6" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
 
-    <item
-        android:start="8dp"
-        android:top="8dp">
-        <shape>
-            <gradient
-                android:angle="-45"
-                android:type="linear"
-                android:endColor="#00000000"
-                android:startColor="#20000000" />
-            <corners android:radius="6dp" />
-        </shape>
+        </layer-list>
     </item>
-
-    <item
-        android:start="6dp"
-        android:top="6dp">
-        <shape>
-            <gradient
-                android:angle="-135"
-                android:type="linear"
-                android:endColor="#20000000"
-                android:startColor="#40000000" />
-            <corners android:radius="6dp" />
-        </shape>
-    </item>
-
-    <item
-        android:bottom="3dp"
-        android:end="3dp"
-        android:start="3dp"
-        android:top="3dp">
-        <shape>
-            <solid android:color="#00C1B6" />
-            <corners android:radius="6dp" />
-        </shape>
-    </item>
-
-</layer-list>
+</ripple>
