@@ -83,6 +83,10 @@ dependencies {
     implementation(AndroidXLibs.transition)
     implementation(AndroidXLibs.collectionKtx)
     implementation(AndroidXLibs.workManagerktx)
+    implementation(AndroidXLibs.camera)
+    implementation(AndroidXLibs.cameraLifeCycle)
+    implementation(AndroidXLibs.cameraView)
+    implementation(AndroidXLibs.cameraExt)
 
     implementation(AndroidXArch.coreRuntime)
     implementation(AndroidXArch.lifeCycleViewModel)
@@ -110,6 +114,8 @@ dependencies {
     kapt(Libs.glideCompiler)
 
     implementation(Libs.timber)
+    implementation(Libs.threeTenAbp)
+    implementation(Libs.imageCropper)
     implementation(Libs.materialComponents)
 
     testImplementation(TestLibs.junit)
