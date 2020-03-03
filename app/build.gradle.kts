@@ -51,6 +51,11 @@ android {
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+
+        getByName("debug") {
+            isMinifyEnabled = false
+            isTestCoverageEnabled = true
+        }
     }
 
     sourceSets["main"].java.srcDir("src/main/kotlin")
@@ -129,4 +134,8 @@ dependencies {
     androidTestImplementation(AndroidTestLibs.espresso)
     androidTestImplementation(AndroidTestLibs.coreTesting)
     androidTestImplementation(AndroidTestLibs.fragmentTesting)
+}
+
+kapt {
+    correctErrorTypes = true
 }
