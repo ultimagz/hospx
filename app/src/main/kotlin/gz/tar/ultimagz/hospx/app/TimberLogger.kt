@@ -1,4 +1,4 @@
-package gz.tar.ultimagz.hospx
+package gz.tar.ultimagz.hospx.app
 
 import org.koin.core.logger.Level
 import org.koin.core.logger.Logger

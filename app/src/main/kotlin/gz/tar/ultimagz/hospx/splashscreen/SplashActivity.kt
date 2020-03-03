@@ -1,14 +1,12 @@
-package gz.tar.ultimagz.hospx
+package gz.tar.ultimagz.hospx.splashscreen
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityOptionsCompat
 import gz.tar.ultimagz.hospx.databinding.ActivitySplashBinding
-import kotlinx.android.synthetic.main.activity_splash.*
+import gz.tar.ultimagz.hospx.login.LoginActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

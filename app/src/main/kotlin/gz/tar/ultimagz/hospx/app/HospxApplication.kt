@@ -1,4 +1,4 @@
-package gz.tar.ultimagz.hospx
+package gz.tar.ultimagz.hospx.app
 
 import androidx.multidex.MultiDexApplication
 import org.koin.android.ext.koin.androidContext

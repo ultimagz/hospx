@@ -1,4 +1,4 @@
-package gz.tar.ultimagz.hospx
+package gz.tar.ultimagz.hospx.login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
