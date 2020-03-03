@@ -29,6 +29,8 @@ object Versions {
     const val androidXCoordinatorLayout = "1.1.0"
     const val androidXVectorDrawable = "1.1.0"
     const val androidXTransition = "1.3.0"
+    const val androidXCamera = "1.0.0-beta01"
+    const val androidXCameraView = "1.0.0-alpha08"
 
     /* AndroidX Architecture Components */
     const val androidXArch = "2.1.0"
@@ -54,6 +56,9 @@ object Versions {
     const val timber = "4.7.1"
     const val materialComponents = "1.0.0"
     const val threeTenAbp = "1.2.2"
+    const val fotoapparat = "2.7.0"
+    const val cameraView = "2.6.1"
+    const val imageCropper = "2.8.0"
 
         /* Test */
     const val junit = "4.12"
@@ -88,6 +93,10 @@ object AndroidXLibs {
     const val vectorDrawable = "androidx.vectordrawable:vectordrawable:${Versions.androidXVectorDrawable}"
     const val vectorDrawableAnimated = "androidx.vectordrawable:vectordrawable-animated:${Versions.androidXVectorDrawable}"
     const val transition = "androidx.transition:transition:${Versions.androidXTransition}"
+    const val camera = "androidx.camera:camera-camera2:${Versions.androidXCamera}"
+    const val cameraLifeCycle = "androidx.camera:camera-lifecycle:${Versions.androidXCamera}"
+    const val cameraView = "androidx.camera:camera-view:${Versions.androidXCameraView}"
+    const val cameraExt = "androidx.camera:camera-extensions:${Versions.androidXCameraView}"
 }
 
 object AndroidXArch {
@@ -130,6 +139,9 @@ object Libs {
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val materialComponents = "com.google.android.material:material:${Versions.materialComponents}"
     const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTenAbp}"
+    const val fotoapparat = "io.fotoapparat:fotoapparat:${Versions.fotoapparat}"
+    const val cameraview = "com.otaliastudios:cameraview:${Versions.cameraView}"
+    const val imageCropper = "com.theartofdev.edmodo:android-image-cropper:${Versions.imageCropper}"
 }
 
 object GooglePlay {
