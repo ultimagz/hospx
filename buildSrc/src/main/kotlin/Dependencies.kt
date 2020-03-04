@@ -31,6 +31,7 @@ object Versions {
     const val androidXTransition = "1.3.0"
     const val androidXCamera = "1.0.0-beta01"
     const val androidXCameraView = "1.0.0-alpha08"
+    const val androidXSecurity = "1.0.0-alpha02"
 
     /* AndroidX Architecture Components */
     const val androidXArch = "2.1.0"
@@ -98,6 +99,7 @@ object AndroidXLibs {
     const val cameraLifeCycle = "androidx.camera:camera-lifecycle:${Versions.androidXCamera}"
     const val cameraView = "androidx.camera:camera-view:${Versions.androidXCameraView}"
     const val cameraExt = "androidx.camera:camera-extensions:${Versions.androidXCameraView}"
+    const val security = "androidx.security:security-crypto:${Versions.androidXSecurity}"
 }
 
 object AndroidXArch {
