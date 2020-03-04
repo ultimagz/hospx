@@ -122,6 +122,7 @@ dependencies {
     implementation(Libs.threeTenAbp)
     implementation(Libs.imageCropper)
     implementation(Libs.materialComponents)
+    implementation(Libs.lottie)
 
     testImplementation(TestLibs.junit)
     testImplementation(TestLibs.mockito)

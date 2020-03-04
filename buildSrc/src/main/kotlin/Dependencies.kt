@@ -59,6 +59,7 @@ object Versions {
     const val fotoapparat = "2.7.0"
     const val cameraView = "2.6.1"
     const val imageCropper = "2.8.0"
+    const val lottie = "3.4.0"
 
         /* Test */
     const val junit = "4.12"
@@ -142,6 +143,8 @@ object Libs {
     const val fotoapparat = "io.fotoapparat:fotoapparat:${Versions.fotoapparat}"
     const val cameraview = "com.otaliastudios:cameraview:${Versions.cameraView}"
     const val imageCropper = "com.theartofdev.edmodo:android-image-cropper:${Versions.imageCropper}"
+    const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
+
 }
 
 object GooglePlay {
