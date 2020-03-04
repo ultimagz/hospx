@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".splashscreen.SplashActivity"
+    tools:ignore="ContentDescription">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/splash_bg"
-        tools:context=".splashscreen.SplashActivity"
-        tools:ignore="ContentDescription">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splashLottieView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:transitionName="splashIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fallbackRes="@drawable/ic_hosp"
+        app:lottie_fileName="lottie-fitness-loading-spinner-dark-blue.json"
+        app:lottie_loop="true" />
 
-        <ImageView
-            android:id="@+id/ivSplashIcon"
-            android:layout_width="360dp"
-            android:layout_height="640dp"
-            android:layout_marginTop="24dp"
-            android:transitionName="splashIcon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_hosp" />
+    <TextView
+        android:id="@+id/splashMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Loading"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/splashLottieView"
+        app:layout_constraintEnd_toStartOf="@id/splashLottieView"
+        app:layout_constraintTop_toTopOf="@id/splashLottieView" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+</androidx.constraintlayout.widget.ConstraintLayout>
