@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -43,10 +43,8 @@
     <style name="BaseCardViewStyle" parent="Widget.MaterialComponents.CardView">
         <item name="android:checkable">false</item>
         <item name="android:clickable">false</item>
-<!--        <item name="cardBackgroundColor">#FFF</item>-->
         <item name="cardCornerRadius">8dp</item>
         <item name="cardPreventCornerOverlap">true</item>
         <item name="cardElevation">2dp</item>
-        <item name="cardUseCompatPadding">true</item>
     </style>
 </resources>
