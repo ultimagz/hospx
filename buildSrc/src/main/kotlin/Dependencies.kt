@@ -52,10 +52,13 @@ object Versions {
     /* Glide */
     const val glide = "4.11.0"
 
+    /* Epoxy */
+    const val epoxy = "3.9.0"
+
     /* Utils */
     const val arrowKt = "0.10.4"
     const val timber = "4.7.1"
-    const val materialComponents = "1.0.0"
+    const val materialComponents = "1.1.0"
     const val threeTenAbp = "1.2.2"
     const val fotoapparat = "2.7.0"
     const val cameraView = "2.6.1"
@@ -137,6 +140,10 @@ object Libs {
     /* Glide */
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     const val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
+
+    /* Epoxy */
+    const val epoxy = "com.airbnb.android:epoxy:${Versions.epoxy}"
+    const val epoxyProcessor = "com.airbnb.android:epoxy-processor:${Versions.epoxy}"
 
     /* Utils */
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
