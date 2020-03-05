@@ -25,6 +25,9 @@
         <activity
             android:name=".login.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SelectCategoryActivity"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
