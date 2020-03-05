@@ -5,4 +5,7 @@
     <color name="colorAccent">#23d5cd</color>
     <color name="colorControlHighlight">#b8fffc</color>
     <color name="colorTextPrimary">#0B2031</color>
+
+    <color name="colorStateActivated">#00c1b6</color>
+    <color name="colorStateNonActivated">#edfaf9</color>
 </resources>
