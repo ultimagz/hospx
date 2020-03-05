@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape android:shape="rectangle">
+            <solid android:color="#FBFBFB" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/default_bg_top"
+        android:gravity="center_vertical|top"
+        android:top="72dp" />
+</layer-list>
