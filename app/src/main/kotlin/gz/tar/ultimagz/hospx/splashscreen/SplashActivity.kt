@@ -38,7 +38,7 @@ class SplashActivity : AppCompatActivity() {
     private fun transitionToLogin() {
         val intent = Intent(this, LoginActivity::class.java)
         transitionJob = GlobalScope.launch {
-            delay(3000L)
+            delay(1500L)
             startActivity(intent)
             finish()
         }
