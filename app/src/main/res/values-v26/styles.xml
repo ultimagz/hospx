@@ -7,18 +7,27 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlHighlight">@color/colorControlHighlight</item>
 
-        <item name="android:windowBackground">@android:color/white</item>
+        <!-- CardView -->
+        <item name="colorSurface">@android:color/white</item>
+
+        <item name="android:windowBackground">@drawable/default_app_bg</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:fontFamily">@font/font_prompt</item>
         <item name="fontFamily">@font/font_prompt</item>
         <item name="android:textViewStyle">@style/BaseAppTextViewStyle</item>
         <item name="buttonStyle">@style/BaseAppButtonStyle</item>
         <item name="android:buttonStyle">@style/BaseAppButtonStyle</item>
+        <item name="materialButtonStyle">@style/BaseAppButtonStyle</item>
+        <item name="cardViewStyle">@style/BaseCardViewStyle</item>
     </style>
 
     <style name="AppTheme.NoActionBar" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_launch_screen</item>
     </style>
 
     <style name="BaseAppButtonStyle" parent="Widget.MaterialComponents.Button">
@@ -29,5 +38,15 @@
         <item name="android:gravity">center</item>
         <item name="android:paddingHorizontal">16dp</item>
         <item name="android:paddingVertical">8dp</item>
+    </style>
+
+    <style name="BaseCardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:checkable">false</item>
+        <item name="android:clickable">false</item>
+<!--        <item name="cardBackgroundColor">#FFF</item>-->
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardUseCompatPadding">true</item>
     </style>
 </resources>
