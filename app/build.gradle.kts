@@ -84,6 +84,7 @@ dependencies {
     implementation(AndroidXLibs.appcompat)
     implementation(AndroidXLibs.constraintLayout)
     implementation(AndroidXLibs.recyclerView)
+    implementation(AndroidXLibs.recyclerViewSelection)
     implementation(AndroidXLibs.multiDex)
     implementation(AndroidXLibs.preferencesKtx)
     implementation(AndroidXLibs.cardView)
@@ -91,7 +92,7 @@ dependencies {
     implementation(AndroidXLibs.vectorDrawableAnimated)
     implementation(AndroidXLibs.transition)
     implementation(AndroidXLibs.collectionKtx)
-    implementation(AndroidXLibs.workManagerktx)
+    implementation(AndroidXLibs.workManagerKtx)
     implementation(AndroidXLibs.camera)
     implementation(AndroidXLibs.cameraLifeCycle)
     implementation(AndroidXLibs.cameraView)
@@ -127,6 +128,9 @@ dependencies {
     implementation(Libs.imageCropper)
     implementation(Libs.materialComponents)
     implementation(Libs.lottie)
+
+    implementation(Libs.epoxy)
+    kapt(Libs.epoxyProcessor)
 
     testImplementation(TestLibs.junit)
     testImplementation(TestLibs.mockito)
