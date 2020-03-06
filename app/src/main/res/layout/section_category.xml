@@ -6,7 +6,7 @@
     <data>
         <variable
             name="category"
-            type="gz.tar.ultimagz.hospx.category.CategoryModel" />
+            type="gz.tar.ultimagz.hospx.category.adapter.CategoryHeaderModel" />
     </data>
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginHorizontal="8dp"
         android:gravity="start|center_vertical"
-        android:text="@{category.categoryType}"
+        android:text="@{String.valueOf(category.year)}"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

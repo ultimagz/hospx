@@ -4,27 +4,32 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
+import gz.tar.ultimagz.hospx.category.adapter.CategoryAdapter
+import gz.tar.ultimagz.hospx.category.adapter.CategoryAdapterModel
+import gz.tar.ultimagz.hospx.category.adapter.CategoryHeaderModel
+import gz.tar.ultimagz.hospx.category.adapter.CategoryItemModel
 import gz.tar.ultimagz.hospx.databinding.ActivitySelectCategoryBinding
+import org.threeten.bp.YearMonth
+import org.threeten.bp.ZoneId
 
 class SelectCategoryActivity : AppCompatActivity() {
 
     private val binding: ActivitySelectCategoryBinding by lazy { ActivitySelectCategoryBinding.inflate(layoutInflater) }
     private val adapter by lazy { CategoryAdapter(layoutInflater) }
 
-    private val categoryList: MutableList<CategoryModel> by lazy {
-        (1..10)
-            .map {
-                val type = if (it % 2 == 0) "Even" else "Odd"
-                CategoryModel("$it", type)
-            }
-            .sortedWith(compareBy({ it.categoryType }, { it.name.toInt() }))
-            .toMutableList()
-            .apply {
-                val firstEven = first { it.categoryType == "Even" }
-                add(indexOf(firstEven), CategoryModel(categoryType = "Even", isHeader = true))
+    private val categoryList: MutableList<CategoryAdapterModel> by lazy {
+        val currentDate = YearMonth.now(ZoneId.of("GMT+07:00"))
+        return@lazy (0..6L)
+            .map { currentDate.minusMonths(it) }
+            .sortedWith(compareBy({ it.month }, { it.year }))
+            .toList()
+            .fold(arrayListOf<CategoryAdapterModel>()) { accumulator, item ->
+                accumulator
+                    .lastOrNull { it.year == item.year }
+                    ?: accumulator.add(CategoryHeaderModel(item.year))
 
-                val firstOdd = first { it.categoryType == "Odd" }
-                add(indexOf(firstOdd), CategoryModel(categoryType = "Odd", isHeader = true))
+                accumulator.add(CategoryItemModel(month = item.month, year = item.year))
+                accumulator
             }
     }
 
@@ -49,10 +54,10 @@ class SelectCategoryActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
 
         adapter.submitList(ArrayList(categoryList))
-        adapter.selectionMode = CategoryAdapter.Mode.SINGLE
+        adapter.selectionMode = CategoryAdapter.SelectionMode.SINGLE
 
         binding.btnSelectionConfirm.setOnClickListener {
-            val selectionText = adapter.getSelectedItems().joinToString(", ") { it.name }
+            val selectionText = adapter.getSelectedItems().joinToString("\n") { it.toString() }
             Toast.makeText(
                 this,
                 if (selectionText.isEmpty()) "No Item Selected." else selectionText,

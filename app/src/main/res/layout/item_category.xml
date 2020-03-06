@@ -11,7 +11,7 @@
 
         <variable
             name="category"
-            type="gz.tar.ultimagz.hospx.category.CategoryModel" />
+            type="gz.tar.ultimagz.hospx.category.adapter.CategoryItemModel" />
     </data>
 
     <TextView
@@ -22,8 +22,9 @@
         android:layout_marginVertical="4dp"
         android:background="@drawable/item_bg_state_selector"
         android:gravity="center"
-        android:text="@{category.name}"
+        android:text="@{category.month.toString()}"
         android:textSize="20sp"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
